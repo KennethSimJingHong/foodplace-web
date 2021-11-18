@@ -1,0 +1,16 @@
+{
+  "name": "eat_web",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "kenneth",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}

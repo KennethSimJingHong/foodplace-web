@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Place App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script defer src="src/script.js"></script>
+</head>
+<body>
+    <div class="header">Food Place App <span>by Kenneth</span></div>
+    <div class="content">
+        <div class="sidebar">
+            <div class="container__sort">
+                sorted by:
+                <select class="container__sort--option">
+                    <option value="default">Default</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <ul class="places">
+                <!-- data -->
+            </ul>
+            <form class="form">
+                <div class="form__row">
+                    <label class="form__label">Category</label>
+                    <select class="form__input form__input--category">
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="korean">Korean</option>
+                        <option value="western">Western</option>
+                        <option value="thai">Thai</option>
+                        <option value="indian">Indian</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form__row">
+                    <label class="form__label">Name</label>
+                    <input type="text" class="form__input form__input--name"/>
+                </div>
+                <div class="form__row">
+                    <label class="form__label">Comment</label>
+                    <input type="text" class="form__input form__input--comment"/>
+                </div>
+                <div class="form__row">
+                    <label class="form__label">Rate</label>
+                    <input type="range" min="1" max="5" value="1" class="form__input form__input--rate"/>
+                </div>
+                <button class="form__btn">OK</button>
+            </form>
+        </div>
+        <div id="map"></div>
+    </div>
+</body>
+</html>
